@@ -2,6 +2,6 @@
 <%= link_to 'Create a new sub', new_sub_path %>
 <ul>
   <% @subs.each do |sub| %>
-    <li><%= link_to sub.name, sub %></li>
+    <li><%= link_to sub.name, sub_path(sub.id) %></li>
   <% end %>
 </ul>
